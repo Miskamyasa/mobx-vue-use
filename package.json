@@ -1,22 +1,23 @@
 {
   "name": "mobx-vue-use",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {
-    "build": "tsup src/mobx-vue-use.ts --format esm,cjs --dts --external react --sourcemap --clean",
-    "test": "vitest"
+    "build": "tsup src/index.ts --format esm,cjs --dts --external vue,mobx --sourcemap --clean",
+    "test": "vitest",
+    "prepare": "pnpm build"
   },
   "devDependencies": {
     "tsup": "8.5.1",
