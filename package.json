@@ -1,0 +1,52 @@
+{
+  "name": "mobx-vue-use",
+  "version": "1.0.",
+  "type": "module",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/mobx-vue-use.ts --format esm,cjs --dts --external react --sourcemap --clean",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "vitest": "4.0.16"
+  },
+  "peerDependencies": {
+    "mobx": ">=6.0.0",
+    "vue": ">=3.0.0"
+  },
+  "keywords": [
+    "mobx",
+    "vue3",
+    "vue",
+    "composition-api",
+    "composition",
+    "utility"
+  ],
+  "author": "Denis <MiskaMyasa> Zaitsev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Miskamyasa/mobx-vue-use.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Miskamyasa/mobx-vue-use/issues"
+  },
+  "homepage": "https://github.com/Miskamyasa/mobx-vue-use",
+  "dependencies": {
+    "mobx": "6.15.0",
+    "vue": "3.5.26"
+  }
+}
