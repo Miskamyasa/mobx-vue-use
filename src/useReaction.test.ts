@@ -4,7 +4,7 @@ import { shallowRef, readonly } from 'vue'
 import { setupTest, triggerCleanup, cleanupFns } from './test-utils'
 
 // Import useReaction after test-utils to ensure Vue mock is set up
-import { useReaction } from '.'
+import { useReaction } from './mobx-vue-use'
 
 setupTest()
 

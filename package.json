@@ -18,7 +18,7 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external vue,mobx --sourcemap --clean",
+    "build": "tsup src/mobx-vue-use.ts --format esm,cjs --dts --external vue,mobx --sourcemap --clean",
     "test": "vitest",
     "prepare": "pnpm build"
   },

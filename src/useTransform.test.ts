@@ -4,7 +4,7 @@ import { shallowRef, readonly } from 'vue'
 import { setupTest, triggerCleanup, cleanupFns } from './test-utils'
 
 // Import useTransform after test-utils to ensure Vue mock is set up
-import { useTransform } from '.'
+import { useTransform } from './mobx-vue-use'
 
 setupTest()
 
