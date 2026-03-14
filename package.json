@@ -1,6 +1,6 @@
 {
   "name": "mobx-vue-use",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "description": "",
   "files": [
@@ -25,7 +25,7 @@
   "devDependencies": {
     "tsup": "8.5.1",
     "typescript": "5.9.3",
-    "vitest": "4.0.16"
+    "vitest": "4.1.0"
   },
   "peerDependencies": {
     "mobx": ">=6.0.0",
@@ -51,6 +51,6 @@
   "homepage": "https://github.com/Miskamyasa/mobx-vue-use",
   "dependencies": {
     "mobx": "6.15.0",
-    "vue": "3.5.26"
+    "vue": "3.5.30"
   }
 }
