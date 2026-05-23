@@ -1,36 +1,28 @@
 {
-  "name": "mobx-vue-use",
-  "version": "1.0.9",
-  "type": "module",
-  "description": "",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
+  "author": "Denis <MiskaMyasa> Zaitsev",
+  "bugs": {
+    "url": "https://github.com/Miskamyasa/mobx-vue-use/issues"
   },
-  "scripts": {
-    "build": "tsup src/mobx-vue-use.ts --format esm,cjs --dts --external vue,mobx --sourcemap --clean",
-    "test": "vitest",
-    "prepare": "pnpm build"
+  "dependencies": {
+    "mobx": "6.15.0",
+    "vue": "3.5.30"
   },
+  "description": "Vue 3 Composition API utilities for MobX integration",
   "devDependencies": {
     "tsup": "8.5.1",
     "typescript": "5.9.3",
-    "vitest": "4.1.0"
+    "vitest": "4.1.7"
   },
-  "peerDependencies": {
-    "mobx": ">=6.0.0",
-    "vue": ">=3.0.0"
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/Miskamyasa/mobx-vue-use",
   "keywords": [
     "mobx",
     "vue3",
@@ -39,18 +31,26 @@
     "composition",
     "utility"
   ],
-  "author": "Denis <MiskaMyasa> Zaitsev",
   "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "name": "mobx-vue-use",
+  "packageManager": "pnpm@10.32.1",
+  "peerDependencies": {
+    "mobx": ">=6.0.0",
+    "vue": ">=3.5.34"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Miskamyasa/mobx-vue-use.git"
   },
-  "bugs": {
-    "url": "https://github.com/Miskamyasa/mobx-vue-use/issues"
+  "scripts": {
+    "build": "tsup src/mobx-vue-use.ts --format esm,cjs --dts --external vue,mobx --sourcemap --clean",
+    "prepare": "pnpm build",
+    "test": "vitest"
   },
-  "homepage": "https://github.com/Miskamyasa/mobx-vue-use",
-  "dependencies": {
-    "mobx": "6.15.0",
-    "vue": "3.5.30"
-  }
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "1.0.10"
 }
