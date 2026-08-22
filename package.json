@@ -4,14 +4,14 @@
     "url": "https://github.com/Miskamyasa/mobx-vue-use/issues"
   },
   "dependencies": {
-    "mobx": "6.15.0",
-    "vue": "3.5.30"
+    "mobx": "7.0.3",
+    "vue": "3.5.41"
   },
   "description": "Vue 3 Composition API utilities for MobX integration",
   "devDependencies": {
     "tsup": "8.5.1",
     "typescript": "5.9.3",
-    "vitest": "4.1.7"
+    "vitest": "4.1.11"
   },
   "exports": {
     ".": {
@@ -35,7 +35,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "name": "mobx-vue-use",
-  "packageManager": "pnpm@10.32.1",
+  "packageManager": "pnpm@11.20.0",
   "peerDependencies": {
     "mobx": ">=6.0.0",
     "vue": ">=3.5.34"
@@ -52,5 +52,5 @@
   "sideEffects": false,
   "type": "module",
   "types": "./dist/index.d.ts",
-  "version": "1.0.10"
+  "version": "1.1.0"
 }
